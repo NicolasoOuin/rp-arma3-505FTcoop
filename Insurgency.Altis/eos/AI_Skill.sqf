@@ -1,10 +1,10 @@
 // INFANTRY SKILL
 _InfskillSet = [
-0.30,        // aimingAccuracy
-0.45,        // aimingShake
+0.15,        // aimingAccuracy
+0.65,        // aimingShake
 0.7,        // aimingSpeed
-1,         // spotDistance
-0.5,        // spotTime
+0.7,         // spotDistance
+0.4,        // spotTime
 1,        // courage
 1,        // reloadSpeed
 1,        // commanding
@@ -17,8 +17,8 @@ _ArmSkillSet = [
 0.25,        // aimingAccuracy
 0.45,        // aimingShake
 0.6,        // aimingSpeed
-0.4,         // spotDistance
-0.4,        // spotTime
+0.6,         // spotDistance
+0.7,        // spotTime
 1,        // courage
 1,        // reloadSpeed
 1,        // commanding
@@ -59,7 +59,7 @@ _STAskillSet = [
 0.25,        // aimingAccuracy
 0.45,        // aimingShake
 0.6,        // aimingSpeed
-0.6,         // spotDistance
+0.4,         // spotDistance
 0.4,        // spotTime
 1,        // courage
 1,        // reloadSpeed

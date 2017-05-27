@@ -190,5 +190,13 @@ if (DebugEnabled isEqualTo 1) then {
 		nul = [] execVM "Objectives\tasks_complete.sqf";
 	};
 };
+	if (PARAMS_AO == 1) then { _null = [] execVM "Objectives\main\missionControl.sqf"; };						// Main AO
+	if (PARAMS_SideObjectives == 1) then { _null = [] execVM "Objectives\side\missionControl.sqf";};			// Side objectives
+	//_null = [] execVM "scripts\misc\airbaseDefense.sqf";
+	_null = [] execVM "eos1\OpenMe1.sqf";																// EOS (urban mission and defend AO)
+	_null = [] execVM "scripts\misc\cleanup.sqf";															// cleanup
+	_null = [] execVM "scripts\misc\islandConfig.sqf";
+	};													// prep the island for mission
+};
 
 //BMR_server_initialized = true;publicVariable "BMR_server_initialized";
