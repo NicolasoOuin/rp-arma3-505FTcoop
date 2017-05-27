@@ -67,10 +67,12 @@ switch (INS_op_faction) do
 	case 1 : // CSAT (no mods)
 	{
 		[EAST,0,0]execVM "eos\OpenMe.sqf";
+		[EAST,0,0]execVM "eos1\OpenMe1.sqf";
 	};
 	case 2 : // AAF (no mods)
 	{
 		[RESISTANCE,2,2]execVM "eos\OpenMe.sqf";
+		[RESISTANCE,2,2]execVM "eos1\OpenMe1.sqf";
 	};
 	case 3 : // African Conflict with NATO SF and Russian Spetsnaz Weapons (@african_conflict;@nato_russian_sf_weapons)
 	{
@@ -183,7 +185,9 @@ nul = ["mission"] execVM "hcam_init.sqf";
 execVM "BTK\Cargo Drop\Start.sqf";
 execVM "LT\init.sqf";
 execVM "scripts\earplugs.sqf";
-execVM "Objectives\missionControl.sqf";
+execVM "Objectives\main\missionControl.sqf";
+execVM "Objectives\side\missionControl.sqf";
+execVM "eos1\OpenMe1.sqf";
 
 // Auxiliary AI Men Caching
 if ((DebugEnabled isEqualTo 1) && (tky_perfmon > 0)) then {

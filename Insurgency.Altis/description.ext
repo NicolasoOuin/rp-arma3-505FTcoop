@@ -1,4 +1,4 @@
-Author = "Edited by Jigsor Modified by Chewbi 505, Mebisis 505, Pereben";
+Author = "Edited by Jigsor Modified by Chewbi 505, Mebisis 505,";
 loadScreen = "images\bmrflag.paa";
 onLoadName = "Barkhane Insurgency Altis";
 onLoadMission = bmr-squad.com;
@@ -69,7 +69,7 @@ class Extended_InitPost_EventHandlers {
 };
 
 class CfgDebriefing
-{  
+{
 	class END1
 	{
 		title = "Mission Completed";
